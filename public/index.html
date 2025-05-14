@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADD AKSES SCRIPT X7BOTZ BY YUDZXML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ADD ACCESS X7BOTZ</h1>
 
+    <div class="form-container">
+      <label for="key">Key Script</label>
+      <input type="text" id="key" placeholder="Example: Yudzxml (OPSIONAL)" />
+
+      <label for="phone">Nomor WhatsApp</label>
+      <input type="text" id="phone" placeholder="Example: 628xxx" />
+
+      <label for="newPhone">Edit Nomor</label>
+      <input type="text" id="newPhone" placeholder="For editing only: 628xxx" />
+
+      <div class="button-group">
+        <button onclick="addPhoneNumber()">TAMBAH NOMOR</button>
+        <button onclick="deletePhoneNumber()">HAPUS NOMOR</button>
+        <button onclick="editPhoneNumber()">EDIT NOMOR</button>
+        <button onclick="changeKey()">GANTI KEY</button>
+      </div>
+    </div>
+
+    <div class="phone-list">
+      <h2>Phone Numbers</h2>
+      <ul id="phone-list">
+        <!-- Loaded phone numbers will appear here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
